@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gananiya-tech.vercel.app/sitemap.xml
+# Sitemap
+Sitemap: https://www.gananiyatech.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
