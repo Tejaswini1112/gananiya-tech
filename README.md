@@ -1,73 +1,54 @@
-# Welcome to your Lovable project
+# Gananiya Tech
 
-## Project info
+A modern web application showcasing Gananiya Tech's innovative logistics solutions powered by AI.
 
-**URL**: https://lovable.dev/projects/f6348fcd-92ba-4b07-b42a-245dadb76125
+## Features
 
-## How can I edit this code?
+- 🎨 Modern, responsive design with light/dark theme support
+- 🚀 Built with React, TypeScript, and Vite
+- 🎯 AI-powered logistics route optimization
+- 📱 Mobile-first approach
+- 🌐 SEO-friendly
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Shadcn/ui
+- Three.js (for 3D tech stack visualization)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f6348fcd-92ba-4b07-b42a-245dadb76125) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/gananiya-tech.git
+cd gananiya-tech
+```
 
-**Use your preferred IDE**
+2. Install dependencies:
+```bash
+npm install
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open [http://localhost:8001](http://localhost:8001) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Development
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Deployment
 
-## What technologies are used for this project?
+This project is deployed on Vercel. Any push to the main branch will trigger an automatic deployment.
 
-This project is built with:
+## License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f6348fcd-92ba-4b07-b42a-245dadb76125) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+MIT
