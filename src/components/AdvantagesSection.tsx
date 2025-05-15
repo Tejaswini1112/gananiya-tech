@@ -106,55 +106,40 @@ const AdvantagesSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="relative flex items-center justify-center h-[420px] md:h-[500px] w-full mb-16">
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-900 shadow-lg rounded-full px-8 py-6 flex flex-col items-center border border-gananiya-teal/20">
-            <span className="text-2xl font-bold text-gananiya-teal mb-1">Unified</span>
-            <span className="text-lg font-semibold text-slate-700 dark:text-slate-200">Technology Stack</span>
-          </div>
-          {techStack.map((tech, i) => {
-            const angle = (i / techStack.length) * 2 * Math.PI;
-            const radius = 180;
-            const x = Math.cos(angle - Math.PI/2) * radius;
-            const y = Math.sin(angle - Math.PI/2) * radius;
-            return (
-              <div
-                key={tech.layer}
-                style={{
-                  position: 'absolute',
-                  left: `calc(50% + ${x}px)` ,
-                  top: `calc(50% + ${y}px)` ,
-                  transform: 'translate(-50%, -50%)',
-                  zIndex: 5,
-                  transition: 'box-shadow 0.2s',
-                }}
-                className="group bg-white dark:bg-slate-900 border border-gananiya-teal/20 shadow-lg rounded-xl px-6 py-4 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-200 cursor-pointer"
-              >
-                <div className="mb-2 p-2 bg-gananiya-teal/10 rounded-full">
-                  {tech.icon}
-                </div>
-                <h3 className="text-lg font-semibold mb-1 text-center">{tech.layer}</h3>
-                <p className="text-xs text-muted-foreground text-center max-w-[140px]">{tech.tools}</p>
-              </div>
-            );
-          })}
-          <svg className="absolute left-0 top-0 w-full h-full pointer-events-none" width="100%" height="100%">
-            {techStack.map((_, i) => {
-              const angle1 = (i / techStack.length) * 2 * Math.PI;
-              const angle2 = ((i + 1) % techStack.length) * 2 * Math.PI;
-              const r = 180;
-              const x1 = 0.5 + Math.cos(angle1 - Math.PI/2) * r / 420;
-              const y1 = 0.5 + Math.sin(angle1 - Math.PI/2) * r / 420;
-              const x2 = 0.5 + Math.cos(angle2 - Math.PI/2) * r / 420;
-              const y2 = 0.5 + Math.sin(angle2 - Math.PI/2) * r / 420;
+        <div className="relative flex items-center justify-center h-[520px] md:h-[650px] w-full mb-16">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] md:w-[600px] md:h-[600px] rounded-full bg-gananiya-teal/10 dark:bg-gananiya-teal/20 blur-2xl z-0"></div>
+          <div className="relative w-full h-full animate-spin-slow">
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-900 shadow-lg rounded-full px-12 py-10 flex flex-col items-center border-2 border-gananiya-teal/40">
+              <span className="text-3xl font-bold text-gananiya-teal mb-1">Unified</span>
+              <span className="text-lg font-semibold text-slate-700 dark:text-slate-200">Technology Stack</span>
+            </div>
+            {techStack.map((tech, i) => {
+              const angle = (i / techStack.length) * 2 * Math.PI;
+              const radius = 250;
+              const x = Math.cos(angle - Math.PI/2) * radius;
+              const y = Math.sin(angle - Math.PI/2) * radius;
               return (
-                <line
-                  key={i}
-                  x1={`${x1 * 100}%`} y1={`${y1 * 100}%`} x2={`${x2 * 100}%`} y2={`${y2 * 100}%`}
-                  stroke="#14b8a6" strokeWidth="2" opacity="0.3"
-                />
+                <div
+                  key={tech.layer}
+                  style={{
+                    position: 'absolute',
+                    left: `calc(50% + ${x}px)` ,
+                    top: `calc(50% + ${y}px)` ,
+                    transform: 'translate(-50%, -50%)',
+                    zIndex: 5,
+                    transition: 'box-shadow 0.2s',
+                  }}
+                  className="group bg-white dark:bg-slate-900 border-2 border-gananiya-teal/40 shadow-xl rounded-xl px-10 py-8 flex flex-col items-center hover:scale-110 hover:shadow-2xl hover:border-gananiya-teal transition-all duration-300 cursor-pointer animate-fade-in"
+                >
+                  <div className="mb-3 p-3 bg-gananiya-teal/20 rounded-full text-3xl">
+                    {tech.icon}
+                  </div>
+                  <h3 className="text-lg font-bold mb-1 text-center text-gananiya-teal group-hover:text-gananiya-purple transition-colors">{tech.layer}</h3>
+                  <p className="text-xs text-muted-foreground text-center max-w-[160px]">{tech.tools}</p>
+                </div>
               );
             })}
-          </svg>
+          </div>
         </div>
 
         <div 
