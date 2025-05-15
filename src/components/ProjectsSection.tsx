@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -29,7 +28,7 @@ const ProjectsSection: React.FC = () => {
   }, []);
 
   return (
-    <section id="projects" className="py-20 relative bg-gray-50 dark:bg-gananiya-blue">
+    <section id="projects" className="py-20 relative bg-gray-50 dark:bg-slate-800">
       <div className="container mx-auto px-4">
         <div
           ref={(el) => (elementsRef.current[0] = el)}

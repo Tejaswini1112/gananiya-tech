@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 
 const StakeholderSection: React.FC = () => {
@@ -75,7 +74,7 @@ const StakeholderSection: React.FC = () => {
   ];
 
   return (
-    <section id="value" className="py-20 relative bg-gray-50 dark:bg-gananiya-blue">
+    <section id="value" className="py-20 relative bg-gray-50 dark:bg-slate-800">
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-gradient-radial from-gananiya-teal/10 to-transparent rounded-full blur-3xl -z-10"></div>
       
       <div className="container mx-auto px-4">
