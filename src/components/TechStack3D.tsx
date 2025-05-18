@@ -27,8 +27,8 @@ const TechStack3D = () => {
     <div className="h-[500px] w-full rounded-xl overflow-hidden bg-gradient-to-b from-slate-900 to-slate-800 flex flex-col items-center justify-center">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 p-8">
         <div className="flex flex-col items-center space-y-4 animate-fade-in">
-          <IndustryIcon type="it" color="text-green-400" />
-          <span className="text-green-400">IT</span>
+          <IndustryIcon type="it" color="text-purple-400" />
+          <span className="text-purple-400">IT</span>
         </div>
         <div className="flex flex-col items-center space-y-4 animate-fade-in [animation-delay:100ms]">
           <IndustryIcon type="transportation" color="text-blue-400" />
