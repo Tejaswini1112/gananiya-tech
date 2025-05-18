@@ -100,7 +100,7 @@ const AdvantagesSection: React.FC = () => {
           ref={(el) => (elementsRef.current[0] = el)}
           className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll"
         >
-          <h2 className="section-heading mx-auto">Unified Technology Stack</h2>
+          <h2 className="section-heading mx-auto">Our Technology</h2>
           <p className="text-lg text-muted-foreground">
             Powerful and scalable technologies behind our innovative solutions
           </p>
