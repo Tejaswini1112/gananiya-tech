@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { Car, Building2, Truck, Building, Factory } from 'lucide-react';
+import { Car, Building2, Truck, Building, Factory, MonitorSmartphone } from 'lucide-react';
 
 const IndustryIcon = ({ 
   type, 
   color 
 }: { 
-  type: 'transportation' | 'healthcare' | 'logistics' | 'real-estate' | 'manufacturing',
+  type: 'transportation' | 'healthcare' | 'logistics' | 'real-estate' | 'manufacturing' | 'it',
   color: string 
 }) => {
   const iconMap = {
@@ -14,7 +14,8 @@ const IndustryIcon = ({
     'healthcare': Building2,
     'logistics': Truck,
     'real-estate': Building,
-    'manufacturing': Factory
+    'manufacturing': Factory,
+    'it': MonitorSmartphone
   };
 
   const Icon = iconMap[type];
@@ -24,8 +25,12 @@ const IndustryIcon = ({
 const TechStack3D = () => {
   return (
     <div className="h-[500px] w-full rounded-xl overflow-hidden bg-gradient-to-b from-slate-900 to-slate-800 flex flex-col items-center justify-center">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 p-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 p-8">
         <div className="flex flex-col items-center space-y-4 animate-fade-in">
+          <IndustryIcon type="it" color="text-green-400" />
+          <span className="text-green-400">IT</span>
+        </div>
+        <div className="flex flex-col items-center space-y-4 animate-fade-in [animation-delay:100ms]">
           <IndustryIcon type="transportation" color="text-blue-400" />
           <span className="text-blue-400">Transportation</span>
         </div>
