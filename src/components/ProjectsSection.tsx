@@ -88,6 +88,7 @@ const ProjectsSection: React.FC = () => {
             <CardFooter className="flex flex-col items-start">
               <h4 className="font-semibold mb-2">Target Industries:</h4>
               <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-gananiya-teal/10 text-gananiya-teal rounded-full text-sm">IT</span>
                 <span className="px-3 py-1 bg-gananiya-teal/10 text-gananiya-teal rounded-full text-sm">eCommerce</span>
                 <span className="px-3 py-1 bg-gananiya-teal/10 text-gananiya-teal rounded-full text-sm">Pharmaceutical Logistics</span>
                 <span className="px-3 py-1 bg-gananiya-teal/10 text-gananiya-teal rounded-full text-sm">Retail Chains</span>
