@@ -40,8 +40,8 @@ const ProjectsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          {/* Lavielogique Project */}
+        <div className="grid md:grid-cols-1 gap-8 lg:gap-12">
+          {/* Combined Lavielogique & WinkIt+Dropit Project */}
           <Card
             ref={(el) => (elementsRef.current[1] = el)}
             className="animate-on-scroll border-gananiya-teal/20 backdrop-blur-sm bg-white/50 dark:bg-gananiya-navy/50"
@@ -50,21 +50,21 @@ const ProjectsSection: React.FC = () => {
             <CardHeader>
               <div className="flex items-center mb-2">
                 <span className="text-2xl mr-2">🌟</span>
-                <CardTitle>Lavielogique</CardTitle>
+                <CardTitle>Lavielogique with WinkIt + Dropit</CardTitle>
               </div>
-              <CardDescription>The Core Software Platform</CardDescription>
+              <CardDescription>Integrated Enterprise & Consumer Platform</CardDescription>
             </CardHeader>
             <CardContent>
               <p className="font-medium text-lg mb-4">
-                A Blockchain and AI-Powered Digital Backbone for Logistics, Supply Chain, and Marketing
+                A Comprehensive Blockchain and AI-Powered Ecosystem for Business Operations and Consumer Services
               </p>
               <p className="mb-4 text-muted-foreground">
-                Lavielogique is an integrated, intelligent SaaS platform that brings data-driven 
-                optimization, transparency, and real-time insights to the heart of enterprise operations.
+                Lavielogique powers both enterprise operations and consumer-facing applications through a unified platform,
+                delivering value across the entire supply chain from business logistics to last-mile delivery.
               </p>
               
               <div className="mt-6">
-                <h4 className="font-semibold mb-2">Key Features:</h4>
+                <h4 className="font-semibold mb-2">Lavielogique Enterprise Platform:</h4>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-gananiya-teal mr-2">•</span>
@@ -84,45 +84,12 @@ const ProjectsSection: React.FC = () => {
                   </li>
                 </ul>
               </div>
-            </CardContent>
-            <CardFooter className="flex flex-col items-start">
-              <h4 className="font-semibold mb-2">Target Industries:</h4>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-gananiya-teal/10 text-gananiya-teal rounded-full text-sm">IT</span>
-                <span className="px-3 py-1 bg-gananiya-teal/10 text-gananiya-teal rounded-full text-sm">eCommerce</span>
-                <span className="px-3 py-1 bg-gananiya-teal/10 text-gananiya-teal rounded-full text-sm">Pharmaceutical Logistics</span>
-                <span className="px-3 py-1 bg-gananiya-teal/10 text-gananiya-teal rounded-full text-sm">Retail Chains</span>
-                <span className="px-3 py-1 bg-gananiya-teal/10 text-gananiya-teal rounded-full text-sm">Consumer Goods Distribution</span>
-              </div>
-            </CardFooter>
-          </Card>
-
-          {/* WinkIt + Dropit Project */}
-          <Card
-            ref={(el) => (elementsRef.current[2] = el)}
-            className="animate-on-scroll border-gananiya-teal/20 backdrop-blur-sm bg-white/50 dark:bg-gananiya-navy/50"
-            style={{ transitionDelay: "0.4s" }}
-          >
-            <CardHeader>
-              <div className="flex items-center mb-2">
-                <span className="text-2xl mr-2">📦</span>
-                <CardTitle>WinkIt + Dropit</CardTitle>
-              </div>
-              <CardDescription>Unified Instant Delivery Applications</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="font-medium text-lg mb-4">
-                Built on Lavielogique – Serving Urban Consumers and Businesses in USA and India
-              </p>
-              <p className="mb-4 text-muted-foreground">
-                WinkIt and Dropit combine into a single, powerful instant delivery platform, offering 
-                groceries, essentials, and on-demand errands at record-breaking speed.
-              </p>
               
-              <div className="mt-6 space-y-4">
+              <div className="mt-6 space-y-4 border-t pt-6">
+                <h4 className="font-semibold mb-2">Consumer Applications Powered by Lavielogique:</h4>
                 <div>
-                  <h4 className="font-semibold mb-2">WinkIt (Groceries & Essentials in a Wink):</h4>
-                  <ul className="space-y-2">
+                  <h5 className="font-semibold text-gananiya-teal">WinkIt (Groceries & Essentials in a Wink):</h5>
+                  <ul className="space-y-2 ml-6 mt-2">
                     <li className="flex items-start">
                       <span className="text-gananiya-teal mr-2">•</span>
                       <span>AI-powered dark stores for instant urban delivery (under 15 minutes).</span>
@@ -133,9 +100,9 @@ const ProjectsSection: React.FC = () => {
                     </li>
                   </ul>
                 </div>
-                <div>
-                  <h4 className="font-semibold mb-2">Dropit (Errands Delivered On-Demand):</h4>
-                  <ul className="space-y-2">
+                <div className="mt-4">
+                  <h5 className="font-semibold text-gananiya-teal">Dropit (Errands Delivered On-Demand):</h5>
+                  <ul className="space-y-2 ml-6 mt-2">
                     <li className="flex items-start">
                       <span className="text-gananiya-teal mr-2">•</span>
                       <span>Door-to-door errands like document delivery, gift runs, and personal tasks.</span>
@@ -149,10 +116,24 @@ const ProjectsSection: React.FC = () => {
               </div>
             </CardContent>
             <CardFooter className="flex flex-col items-start">
-              <h4 className="font-semibold mb-2">Strategic Positioning:</h4>
-              <div className="space-y-1 text-sm">
-                <p><strong>USA:</strong> Focus on major metro areas — NYC, LA, Chicago, San Francisco, Austin.</p>
-                <p><strong>India:</strong> Focus on Tier-1 cities — Bangalore, Mumbai, Delhi NCR, Hyderabad, Pune.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                <div>
+                  <h4 className="font-semibold mb-2">Target Industries:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gananiya-teal/10 text-gananiya-teal border border-gananiya-teal/20">Retail</span>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gananiya-teal/10 text-gananiya-teal border border-gananiya-teal/20">Logistics</span>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gananiya-teal/10 text-gananiya-teal border border-gananiya-teal/20">E-commerce</span>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gananiya-teal/10 text-gananiya-teal border border-gananiya-teal/20">Manufacturing</span>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gananiya-teal/10 text-gananiya-teal border border-gananiya-teal/20">FMCG</span>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">Strategic Positioning:</h4>
+                  <div className="space-y-1 text-sm">
+                    <p><strong>USA:</strong> Focus on major metro areas — NYC, LA, Chicago, San Francisco, Austin.</p>
+                    <p><strong>India:</strong> Focus on Tier-1 cities — Bangalore, Mumbai, Delhi NCR, Hyderabad, Pune.</p>
+                  </div>
+                </div>
               </div>
             </CardFooter>
           </Card>
