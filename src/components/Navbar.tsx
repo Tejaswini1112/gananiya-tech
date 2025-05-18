@@ -27,10 +27,10 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Projects", href: "/projects" },
-    { name: "Advantages", href: "/advantages" },
+    { name: "About Us", href: "/advantages" },
     { name: "Stakeholders", href: "/stakeholders" },
     { name: "Timeline", href: "/timeline" },
-    { name: "Roadmap", href: "/roadmap" },  // Add this line
+    { name: "Roadmap", href: "/roadmap" },
     { name: "Contact", href: "/contact" },
   ];
 

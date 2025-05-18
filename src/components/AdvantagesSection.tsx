@@ -106,39 +106,48 @@ const AdvantagesSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="relative flex items-center justify-center h-[520px] md:h-[650px] w-full mb-16">
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] md:w-[600px] md:h-[600px] rounded-full bg-gananiya-teal/10 dark:bg-gananiya-teal/20 blur-2xl z-0"></div>
-          <div className="relative w-full h-full animate-spin-slow">
-            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-900 shadow-lg rounded-full px-12 py-10 flex flex-col items-center border-2 border-gananiya-teal/40">
-              <span className="text-3xl font-bold text-gananiya-teal mb-1">Unified</span>
-              <span className="text-lg font-semibold text-slate-700 dark:text-slate-200">Technology Stack</span>
-            </div>
-            {techStack.map((tech, i) => {
-              const angle = (i / techStack.length) * 2 * Math.PI;
-              const radius = 250;
-              const x = Math.cos(angle - Math.PI/2) * radius;
-              const y = Math.sin(angle - Math.PI/2) * radius;
-              return (
-                <div
-                  key={tech.layer}
-                  style={{
-                    position: 'absolute',
-                    left: `calc(50% + ${x}px)` ,
-                    top: `calc(50% + ${y}px)` ,
-                    transform: 'translate(-50%, -50%)',
-                    zIndex: 5,
-                    transition: 'box-shadow 0.2s',
-                  }}
-                  className="group bg-white dark:bg-slate-900 border-2 border-gananiya-teal/40 shadow-xl rounded-xl px-10 py-8 flex flex-col items-center hover:scale-110 hover:shadow-2xl hover:border-gananiya-teal transition-all duration-300 cursor-pointer animate-fade-in"
-                >
-                  <div className="mb-3 p-3 bg-gananiya-teal/20 rounded-full text-3xl">
-                    {tech.icon}
+        <div className="w-full mb-16">
+          <div className="mb-8 text-center">
+            <h2 className="text-2xl font-bold text-gananiya-teal mb-2">Unified Technology Stack</h2>
+            <p className="text-slate-700 dark:text-slate-200">Our comprehensive technology ecosystem powering next-generation solutions</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Frontend Technologies */}
+            <div className="bg-gradient-to-r from-gananiya-blue/5 to-gananiya-teal/5 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4 text-gananiya-blue">Frontend Technologies</h3>
+              <div className="grid grid-cols-1 gap-4">
+                {techStack.filter(tech => tech.layer === "Frontend Apps").map((tech) => (
+                  <div key={tech.layer} className="group bg-white dark:bg-slate-900 border-2 border-gananiya-teal/40 shadow-lg rounded-xl p-4 flex items-start hover:shadow-xl hover:border-gananiya-teal transition-all duration-300">
+                    <div className="mr-4 p-2 bg-gananiya-teal/20 rounded-full text-2xl">
+                      {tech.icon}
+                    </div>
+                    <div>
+                      <h4 className="text-base font-bold mb-1 text-gananiya-teal group-hover:text-gananiya-purple transition-colors">{tech.layer}</h4>
+                      <p className="text-sm text-muted-foreground">{tech.tools}</p>
+                    </div>
                   </div>
-                  <h3 className="text-lg font-bold mb-1 text-center text-gananiya-teal group-hover:text-gananiya-purple transition-colors">{tech.layer}</h3>
-                  <p className="text-xs text-muted-foreground text-center max-w-[160px]">{tech.tools}</p>
-                </div>
-              );
-            })}
+                ))}
+              </div>
+            </div>
+            
+            {/* Backend and Other Technologies */}
+            <div className="bg-gradient-to-r from-gananiya-purple/5 to-gananiya-teal/5 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4 text-gananiya-purple">Backend & Infrastructure</h3>
+              <div className="grid grid-cols-1 gap-4">
+                {techStack.filter(tech => tech.layer !== "Frontend Apps").map((tech) => (
+                  <div key={tech.layer} className="group bg-white dark:bg-slate-900 border-2 border-gananiya-teal/40 shadow-lg rounded-xl p-4 flex items-start hover:shadow-xl hover:border-gananiya-teal transition-all duration-300">
+                    <div className="mr-4 p-2 bg-gananiya-teal/20 rounded-full text-2xl">
+                      {tech.icon}
+                    </div>
+                    <div>
+                      <h4 className="text-base font-bold mb-1 text-gananiya-teal group-hover:text-gananiya-purple transition-colors">{tech.layer}</h4>
+                      <p className="text-sm text-muted-foreground">{tech.tools}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
